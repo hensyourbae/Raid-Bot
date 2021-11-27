@@ -1,4 +1,4 @@
-# Discord-Raid-Bot
+# Discord Raid Bot
 
 # Commands:
 
