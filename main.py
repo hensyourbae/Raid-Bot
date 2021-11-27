@@ -48,7 +48,7 @@ async def secret(ctx):
 
 ####KICKS COMMAND####
 @client.command(pass_context=True)
-async def kall(ctx):
+async def kicks(ctx):
     await ctx.message.delete()
     guild = ctx.message.guild
     for member in list(client.get_all_members()):
@@ -62,7 +62,7 @@ async def kall(ctx):
 
 ####BANS COMMAND####
 @client.command(pass_context=True)
-async def ball(ctx):
+async def bans(ctx):
     await ctx.message.delete()
     guild = ctx.message.guild
     for member in list(client.get_all_members()):
@@ -77,7 +77,7 @@ async def ball(ctx):
 ####RENAMES COMMAND####
 @client.command(pass_context=True)
 
-async def rall(ctx, rename_to):
+async def renames(ctx, rename_to):
     await ctx.message.delete()
     for member in list(client.get_all_members()):
         try:
@@ -90,7 +90,7 @@ async def rall(ctx, rename_to):
 
 ####MASSAGES COMMAND####
 @client.command(pass_context=True)
-async def mall(ctx):
+async def messages(ctx):
     await ctx.message.delete()
     for member in list(client.get_all_members()):
         await asyncio.sleep(0)
